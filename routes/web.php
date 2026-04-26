@@ -2,8 +2,5 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::livewire('/', 'pages::users');
 Route::livewire('/count', 'pages::post.create');
